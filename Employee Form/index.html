@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Employee Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="heading">
+        <p>Employee Form using the JPDB API</p>
+      </div>
+      <hr />
+      <div class="fields">
+        <label for="emp-id">Employee ID:</label>
+        <input type="number" name="emp-id" id="emp-id" onfocusout="search()" />
+        <label for="emp-name">Employee Name:</label>
+        <input type="text" name="emp-name" id="emp-name" disabled />
+        <label for="emp-basic">Basic Salary</label>
+        <input type="number" name="emp-basic" id="emp-basic" disabled />
+        <label for="emp-hra">HRA</label>
+        <input type="number" name="emp-hra" id="emp-hra" disabled />
+        <label for="emp-da">DA</label>
+        <input type="number" name="emp-da" id="emp-da" disabled />
+        <label for="emp-deduction">Deduction</label>
+        <input type="number" name="emp-deduction" id="emp-deduction" disabled />
+      </div>
+      <div class="buttons">
+        <button disabled id="save" onclick="save()">Save</button>
+        <button disabled id="change" onclick="change()">Change</button>
+        <button disabled id="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
