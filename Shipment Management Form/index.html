@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipment Management Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Shipment Management Form</h2>
+      <div class="form">
+        <label for="shipment-no">Shipment Number</label>
+        <input
+          type="number"
+          name="shipment-no"
+          id="shipment-no"
+          onfocusout="search()"
+        />
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" disabled />
+
+        <label for="source">Source</label>
+        <input type="text" name="source" id="source" disabled />
+
+        <label for="destination">Destination</label>
+        <input type="text" name="destination" id="destination" disabled />
+
+        <label for="shipping-date">Shipping Date</label>
+        <input type="date" name="shipping-date" id="shipping-date" disabled />
+
+        <label for="delivery-date">Expected Delivery Date</label>
+        <input type="date" name="delivery-date" id="delivery-date" disabled />
+        <div class="buttons">
+          <button disabled id="save" onclick="save()">Save</button>
+          <button disabled id="change" onclick="change()">Change</button>
+          <button disabled id="reset" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
