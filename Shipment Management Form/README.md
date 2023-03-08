@@ -1,10 +1,6 @@
-# Shipment Management Form
+# Shipment Management Form 📝
 
-> A simple form using HTML, CSS and JavaScript with JsonPowerDB as a backend to store and retrieve data.
-
-[![NPM Version][npm-image]][npm-url]
-
-
+> A simple form using HTML, CSS and JavaScript with JsonPowerDB as a backend to store and retrieve data!
 
 This form has been created to demonstrate the working of JPDB.
 
