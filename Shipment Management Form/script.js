@@ -36,7 +36,6 @@ function search() {
     shipmentNumberField.disabled = true;
 
     descriptionField.disabled = false;
-    document.getElementById("description").select();
     descriptionField.value = record["description"];
 
     sourceField.disabled = false;
@@ -56,8 +55,6 @@ function search() {
   } else {
     descriptionField.disabled = false;
     descriptionField.value = "";
-    document.getElementById("description").select();
-
     sourceField.disabled = false;
     sourceField.value = "";
 
@@ -73,6 +70,7 @@ function search() {
     saveButton.disabled = false;
     resetButton.disabled = false;
   }
+  document.getElementById("description").select();
 }
 
 function reset() {
